@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F5D4B10A2CAB43BA00760766 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = F5D4B1092CAB43BA00760766 /* Nimble */; };
+		F5D4B10D2CAB43C800760766 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = F5D4B10C2CAB43C800760766 /* Nimble */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		F5D4B0DD2CAB42F500760766 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -59,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5D4B10D2CAB43C800760766 /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5D4B10A2CAB43BA00760766 /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,7 @@
 				F5D4B0CE2CAB42F400760766 /* IssueDemo1157 */,
 				F5D4B0DF2CAB42F500760766 /* IssueDemo1157Tests */,
 				F5D4B0E92CAB42F500760766 /* IssueDemo1157UITests */,
+				F5D4B10B2CAB43C800760766 /* Frameworks */,
 				F5D4B0CD2CAB42F400760766 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +98,13 @@
 				F5D4B0E62CAB42F500760766 /* IssueDemo1157UITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F5D4B10B2CAB43C800760766 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +150,7 @@
 			);
 			name = IssueDemo1157Tests;
 			packageProductDependencies = (
+				F5D4B10C2CAB43C800760766 /* Nimble */,
 			);
 			productName = IssueDemo1157Tests;
 			productReference = F5D4B0DC2CAB42F500760766 /* IssueDemo1157Tests.xctest */;
@@ -158,6 +174,7 @@
 			);
 			name = IssueDemo1157UITests;
 			packageProductDependencies = (
+				F5D4B1092CAB43BA00760766 /* Nimble */,
 			);
 			productName = IssueDemo1157UITests;
 			productReference = F5D4B0E62CAB42F500760766 /* IssueDemo1157UITests.xctest */;
@@ -195,6 +212,9 @@
 			);
 			mainGroup = F5D4B0C32CAB42F400760766;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F5D4B1082CAB43BA00760766 /* XCRemoteSwiftPackageReference "Nimble" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F5D4B0CD2CAB42F400760766 /* Products */;
 			projectDirPath = "";
@@ -558,6 +578,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F5D4B1082CAB43BA00760766 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F5D4B1092CAB43BA00760766 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5D4B1082CAB43BA00760766 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		F5D4B10C2CAB43C800760766 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5D4B1082CAB43BA00760766 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F5D4B0C42CAB42F400760766 /* Project object */;
 }
