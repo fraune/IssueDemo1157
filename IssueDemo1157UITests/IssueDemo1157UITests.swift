@@ -12,7 +12,7 @@ final class IssueDemo1157UITests: XCTestCase {
     func testTextVisible() {
         let app = XCUIApplication()
         app.launch()
-        sleep(1) // Hack to wait for UI to paint
+        sleep(1) // Wait for UI to paint
         
         let textToCheck = app.staticTexts["Hello, world!"]
         print("### textToCheck exists=\(textToCheck.exists)")
